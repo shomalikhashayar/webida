@@ -10,7 +10,27 @@
 </head>
 
 <body>
-    <div class="counseling-container d-flex justify-content-center gap-5 py-2 align-items-center">
+
+    <header>
+        <div class="counseling-container layout-padding d-flex justify-content-center gap-5 py-2 align-items-center">
+            <p class="fw-500 text-white">با استفاده از تکنولوژی و خلاقیت بهترین نتیجه را برای شما به ارمغان می‌آوریم.</p>
+            <button class="counseling-btn fw-bold rounded-3 border-0 px-3 py-2 text-white ">مشاوره رایگان</button>
+        </div>
+
+
+        <div class="header container d-flex align-items-center justify-content-between">
+            <?php wp_nav_menu(array(
+                'menu' => 'Main Menu', 'menu_class' => 'top-bar'
+
+            )); ?>
+
+            <button class="d-flex align-items-center gap-2 fw-bold rounded-3 border-0 text-white"><i class="material-icons">login</i><span>ثبت نام | ورود</span>
+            </button>
+        </div>
+
+
+    </header>
+    <!-- <div class="counseling-container d-flex justify-content-center gap-5 py-2 align-items-center">
         <p class="fw-500 text-white">با استفاده از تکنولوژی و خلاقیت بهترین نتیجه را برای شما به ارمغان می‌آوریم.</p>
         <button class="counseling-btn fw-bold rounded-3 border-0 px-3 py-2 text-white ">مشاوره رایگان</button>
     </div>
@@ -29,4 +49,4 @@
             <button class="d-flex align-items-center gap-2 fw-bold rounded-3 border-0 text-white"><i class="material-icons">login</i><span>ثبت نام | ورود</span>
             </button>
         </div>
-    </div>
+    </div> -->

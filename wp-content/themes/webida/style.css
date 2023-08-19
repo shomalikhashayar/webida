@@ -13,19 +13,91 @@ Author URI: https://webida.ir
 :root {
   --primary: #ce1340;
   --accent: #f9f6e1;
+  --text: #2d2d2d;
 }
 
 body {
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
   direction: rtl;
   text-align: right;
   font-family: "IRANYEKAN" !important;
   background-color: var(--accent);
 }
 
+header .container {
+  height: 100%;
+}
+
+header {
+  height: 80px;
+  background-color: var(--accent);
+}
+
+header .top-bar {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+header .top-bar li {
+  position: relative;
+  padding: 4px 0;
+}
+
+header .top-bar li a {
+  color: var(--text);
+  padding: 16px 0;
+  text-decoration: none;
+}
+
+header .top-bar li a:hover {
+  transition: color 0.4s ease;
+  color: #2d2d2db6;
+}
+
+header .top-bar li .sub-menu a:hover {
+  transition: color 0.4s ease;
+  color: var(--primary);
+}
+
+header .top-bar li .sub-menu {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #2d2d2d2d;
+  margin-top: 8px;
+  padding: 16px 42px;
+  list-style: disc;
+  color: var(--primary);
+  top: 50%;
+  right: 70%;
+  border-radius: 8px;
+  width: 400px;
+  z-index: 999;
+}
+
+header .top-bar > li > .sub-menu {
+  top: 100%;
+  right: -10%;
+}
+
+header .top-bar li .sub-menu a {
+  color: var(--text);
+}
+
+header .menu-item-has-children:hover > .sub-menu {
+  display: block;
+}
+
 p {
   margin: 0;
+}
+
+ul {
+  margin: 0; 
+  padding:0
 }
 
 .counseling-btn {

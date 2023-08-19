@@ -1,4 +1,6 @@
 <?php
+
+// Add styles
 function load_css()
 {
 
@@ -25,6 +27,7 @@ function load_css()
 
 add_action('wp_enqueue_scripts', 'load_css');
 
+// Add js
 function load_js()
 {
     wp_enqueue_script('jquery');
@@ -41,3 +44,12 @@ function load_js()
 }
 
 add_action('wp_enqueue_scripts', 'load_js');
+
+// Theme options
+add_theme_support('menus');
+
+// Register menus location
+register_nav_menus(
+    array('top-menu' => 'Top Menu Location', 'footer-menu' => 'Footer Menu Location')
+);
+
